@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 200" role="img" aria-label="Malaysia">
+  <title>Malaysia (schematic)</title>
+  <!-- Peninsular Malaysia -->
+  <path
+    d="M40 16 L70 18 L88 38 L96 70 L108 95 L114 120 L132 142 L138 160 L120 168 L96 162 L80 150 L70 130 L60 108 L52 92 L46 70 L40 50 Z"
+    fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-opacity="0.5" stroke-width="1"
+  />
+  <!-- Sarawak -->
+  <path
+    d="M210 110 L260 100 L300 110 L320 130 L300 150 L260 158 L220 152 L200 138 Z"
+    fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-opacity="0.5" stroke-width="1"
+  />
+  <!-- Sabah -->
+  <path
+    d="M330 50 L370 48 L388 70 L386 92 L362 102 L344 96 L328 78 Z"
+    fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-opacity="0.5" stroke-width="1"
+  />
+</svg>

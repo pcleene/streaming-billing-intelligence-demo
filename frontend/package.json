@@ -1,0 +1,35 @@
+{
+  "name": "acme-billing-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@sveltejs/adapter-auto": "^3.3.0",
+    "@sveltejs/adapter-node": "^5.2.0",
+    "@sveltejs/kit": "^2.7.0",
+    "@sveltejs/vite-plugin-svelte": "^4.0.0",
+    "@types/node": "^22.7.0",
+    "autoprefixer": "^10.4.20",
+    "bits-ui": "^1.0.0-next.40",
+    "clsx": "^2.1.1",
+    "lucide-svelte": "^0.460.0",
+    "postcss": "^8.4.49",
+    "svelte": "^5.1.0",
+    "svelte-check": "^4.0.5",
+    "tailwind-merge": "^2.5.4",
+    "tailwind-variants": "^0.3.0",
+    "tailwindcss": "^3.4.14",
+    "tslib": "^2.8.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  },
+  "dependencies": {}
+}

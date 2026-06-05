@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root.dark {
+  --bg:       11 11 20;       /* #0b0b14 */
+  --surface:  17 18 32;       /* #111220 */
+  --elevated: 24 26 44;       /* #181a2c */
+  --border:   42 44 70;
+  --muted:    133 137 168;
+  --fg:       236 238 255;
+  --accent:   236 72 175;     /* magenta */
+  --accent2:  120 73 230;     /* violet */
+  --ok:       46 199 144;
+  --warn:     244 191 79;
+  --danger:   240 90 90;
+}
+
+@layer base {
+  body {
+    background-image:
+      radial-gradient(1200px 600px at 80% -10%, rgba(120, 73, 230, 0.18), transparent 60%),
+      radial-gradient(900px 500px at -10% 30%, rgba(236, 72, 175, 0.10), transparent 60%);
+    background-attachment: fixed;
+  }
+  ::selection { background: rgb(var(--accent) / 0.5); }
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-border bg-surface/70 backdrop-blur-sm;
+  }
+  .card-elevated {
+    @apply rounded-xl border border-border bg-elevated shadow-glow;
+  }
+  .pill {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-medium;
+  }
+  .pill-ok       { @apply bg-ok/15 text-ok; }
+  .pill-warn     { @apply bg-warn/15 text-warn; }
+  .pill-danger   { @apply bg-danger/15 text-danger; }
+  .pill-muted    { @apply bg-muted/15 text-muted; }
+  .pill-accent   { @apply bg-accent/15 text-accent; }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg
+           border border-border bg-elevated px-3 py-1.5 text-sm
+           hover:bg-surface transition-colors;
+  }
+  .btn-primary {
+    @apply border-accent/50 bg-accent/15 text-accent hover:bg-accent/25;
+  }
+  .input {
+    @apply w-full rounded-lg border border-border bg-elevated px-3 py-2 text-sm
+           placeholder:text-muted/70 focus:outline-none focus:ring-2 focus:ring-accent/40;
+  }
+  .grid-cards {
+    @apply grid gap-4 sm:grid-cols-2 lg:grid-cols-4;
+  }
+}

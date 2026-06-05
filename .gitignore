@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / SvelteKit
+node_modules/
+.svelte-kit/
+build/
+dist/
+.vite/
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# ML / Spark
+mlruns/
+ml/artifacts/*.joblib
+spark-warehouse/
+checkpoints/
+delta-lake/
+*.ipynb_checkpoints/
+
+# Generated data
+data-generator/output/
+seed_data/*.json
+seed_data/*.bson
+
+# Logs
+*.log
+logs/
